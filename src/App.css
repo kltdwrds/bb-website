@@ -1,38 +1,243 @@
-.App {
-  text-align: center;
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+  --body-bg: #503D2E;
+  --section-bg: #F6F6F3;
+  --primary-text: #333333;
+  --primary-action: #5F7542;
+  --secondary: #D44D27;
+  --accent: #E2A72E;
+  --gray: #A9A9A9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* src/App.css */
+body {
+  background-color: var(--body-bg);
+  color: var(--primary-text);
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700; /* Makes all text bolder by default */
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navigation Header */
+.nav-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(246, 246, 243, 0.9);
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.nav-header a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 24px;
+}
+
+.nav-links {
+  padding-right: 10px;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  /* padding: 0px 10px; */
+  color: var(--primary-text);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-family: 'Comic Neue', cursive;
+}
+
+.nav-links a.buy {
+  color: var(--primary-action);
+  font-weight: 700;
+}
+
+/* Hero Section */
+.hero {
+  color: #F6F6F3;
+  display: flex;
+  align-items: center; 
+  /* justify-content: space-evenly; */
+  padding: 40px;
+  /* margin-top: 70px; Offset for fixed header */
+}
+
+.hero img {
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-family: 'Comic Neue', cursive;
+}
+
+.buy-button {
+  background-color: var(--primary-action);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.learn-more {
+  background-color: var(--gray);
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Description Section */
+.description {
+  padding: 30px;
+  background-color: var(--section-bg);
+  border-radius: 10px;
+  margin: 50px 50px 0px 50px;
+}
+
+.description h2 {
+  margin: 0px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.description p {
+  font-size: 18px;
+}
+
+.description a {
+  color: var(--primary-action);
+}
+
+/* Deer Assets Section */
+.deer-assets {
+  padding: 50px;
+}
+
+.deer-assets h2 {
+  color: #F6F6F3;
+  text-align: center;
+  font-size: 42px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  background-color: ;
+  
+}
+
+.deer-assets-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.deer-asset {
+  background-color: var(--section-bg);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 18%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.deer-asset img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.deer-asset h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.deer-asset p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.mint-button {
+  background-color: var(--primary-action);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Comic Neue', cursive;
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--section-bg);
+}
+
+.footer a {
+  color: var(--primary-action);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer .buy-button {
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 30px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-links a {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+
+  .deer-asset {
+    flex: 1 1 100%;
   }
 }
