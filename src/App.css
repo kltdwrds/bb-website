@@ -84,7 +84,7 @@ body {
   color: #F6F6F3;
   display: flex;
   align-items: center; 
-  /* justify-content: space-evenly; */
+  justify-content: space-around;
   padding: 40px;
   /* margin-top: 70px; Offset for fixed header */
 }
