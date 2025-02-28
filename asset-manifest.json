@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/baby-brigade/static/css/main.96f8f66f.css",
-    "main.js": "/baby-brigade/static/js/main.9a063b8d.js",
-    "static/js/453.5700e8c2.chunk.js": "/baby-brigade/static/js/453.5700e8c2.chunk.js",
-    "index.html": "/baby-brigade/index.html",
-    "main.96f8f66f.css.map": "/baby-brigade/static/css/main.96f8f66f.css.map",
-    "main.9a063b8d.js.map": "/baby-brigade/static/js/main.9a063b8d.js.map",
-    "453.5700e8c2.chunk.js.map": "/baby-brigade/static/js/453.5700e8c2.chunk.js.map"
+    "main.css": "/bb-brigade/static/css/main.e726c14f.css",
+    "main.js": "/bb-brigade/static/js/main.52080c44.js",
+    "static/js/453.5700e8c2.chunk.js": "/bb-brigade/static/js/453.5700e8c2.chunk.js",
+    "index.html": "/bb-brigade/index.html",
+    "main.e726c14f.css.map": "/bb-brigade/static/css/main.e726c14f.css.map",
+    "main.52080c44.js.map": "/bb-brigade/static/js/main.52080c44.js.map",
+    "453.5700e8c2.chunk.js.map": "/bb-brigade/static/js/453.5700e8c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96f8f66f.css",
-    "static/js/main.9a063b8d.js"
+    "static/css/main.e726c14f.css",
+    "static/js/main.52080c44.js"
   ]
 }
